@@ -1,0 +1,10 @@
+Program,Operation,Input Shape,Never Optimize Time (Baseline),Always Optimize Strategy,Always Optimize Time,DSL Selected Strategy,DSL Selected Time,DSL Speedup vs Never Optimize,DSL Speedup vs Always Optimize,Correct Output?
+"TensorProgram(operation='elementwise_chain', shape=(64, 64))",elementwise_chain,"(64, 64)",0.00025284399998781737,fused,0.0002524380000181736,fused,0.0002524380000181736,1.0016083155848743,1.0,True
+"TensorProgram(operation='elementwise_chain', shape=(128, 128))",elementwise_chain,"(128, 128)",0.0005977789999747074,fused,0.0005680279999751292,fused,0.0005680279999751292,1.0523759392158147,1.0,True
+"TensorProgram(operation='elementwise_chain', shape=(256, 256))",elementwise_chain,"(256, 256)",0.0024185879999549798,fused,0.0024537449999684213,baseline,0.0024185879999549798,1.0,1.0145361673894422,True
+"TensorProgram(operation='elementwise_chain', shape=(512, 512))",elementwise_chain,"(512, 512)",0.010032932000001438,fused,0.009490378999998939,fused,0.009490378999998939,1.0571687389937283,1.0,True
+"TensorProgram(operation='elementwise_chain', shape=(1024, 1024))",elementwise_chain,"(1024, 1024)",0.0453513820000353,fused,0.04118027300000904,fused,0.04118027300000904,1.1012890079680955,1.0,True
+"TensorProgram(operation='matmul', shape=(64, 64))",matmul,"(64, 64)",2.576100001761006e-05,tiled,3.2320000002528104e-05,baseline,2.576100001761006e-05,1.0,1.2546096805416853,True
+"TensorProgram(operation='matmul', shape=(128, 128))",matmul,"(128, 128)",0.00015998999998600993,tiled,0.00045322199997599455,baseline,0.00015998999998600993,1.0,2.8328145510070994,True
+"TensorProgram(operation='matmul', shape=(256, 256))",matmul,"(256, 256)",0.0011569310000254518,tiled,0.0039705390000222,baseline,0.0011569310000254518,1.0,3.431958344909809,True
+"TensorProgram(operation='matmul', shape=(512, 512))",matmul,"(512, 512)",0.009360281999988729,tiled,0.02414788999999473,baseline,0.009360281999988729,1.0,2.5798250522819517,True

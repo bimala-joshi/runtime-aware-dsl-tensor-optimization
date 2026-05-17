@@ -1,0 +1,10 @@
+Program,Operation,Input Shape,Baseline Time (s),Best Optimized Strategy,Best Optimized Time (s),Optimization Beneficial?,System Selected,System Applied Optimization?,Correct Optimization Decision?,Correct Output?
+"TensorProgram(operation='elementwise_chain', shape=(64, 64))",elementwise_chain,"(64, 64)",0.00025284399998781737,fused,0.0002524380000181736,True,fused,True,True,True
+"TensorProgram(operation='elementwise_chain', shape=(128, 128))",elementwise_chain,"(128, 128)",0.0005977789999747074,fused,0.0005680279999751292,True,fused,True,True,True
+"TensorProgram(operation='elementwise_chain', shape=(256, 256))",elementwise_chain,"(256, 256)",0.0024185879999549798,fused,0.0024537449999684213,False,baseline,False,True,True
+"TensorProgram(operation='elementwise_chain', shape=(512, 512))",elementwise_chain,"(512, 512)",0.010032932000001438,fused,0.009490378999998939,True,fused,True,True,True
+"TensorProgram(operation='elementwise_chain', shape=(1024, 1024))",elementwise_chain,"(1024, 1024)",0.0453513820000353,fused,0.04118027300000904,True,fused,True,True,True
+"TensorProgram(operation='matmul', shape=(64, 64))",matmul,"(64, 64)",2.576100001761006e-05,tiled,3.2320000002528104e-05,False,baseline,False,True,True
+"TensorProgram(operation='matmul', shape=(128, 128))",matmul,"(128, 128)",0.00015998999998600993,tiled,0.00045322199997599455,False,baseline,False,True,True
+"TensorProgram(operation='matmul', shape=(256, 256))",matmul,"(256, 256)",0.0011569310000254518,tiled,0.0039705390000222,False,baseline,False,True,True
+"TensorProgram(operation='matmul', shape=(512, 512))",matmul,"(512, 512)",0.009360281999988729,tiled,0.02414788999999473,False,baseline,False,True,True

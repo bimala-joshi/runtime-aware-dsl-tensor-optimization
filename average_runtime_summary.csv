@@ -1,0 +1,4 @@
+Approach,Average Runtime
+Never Optimize Average Runtime,0.007706276555552449
+Always Optimize Average Runtime,0.009172092666662794
+Adaptive DSL Average Runtime,0.0071791855555526736
